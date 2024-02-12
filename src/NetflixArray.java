@@ -45,4 +45,10 @@ public void loadFile(String fileName) {
           JOptionPane.showMessageDialog(null,"error writing file");
       }// end catch
     }
+
+    public void fixTitles(){
+      for (int index = 0 ; index < noOfItems; index++){
+          showArray[index].cleanShowName();
+      }
+    }
 }

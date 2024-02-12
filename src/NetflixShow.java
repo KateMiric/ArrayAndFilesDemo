@@ -1,6 +1,6 @@
 public class NetflixShow {
     private String showName;
-    private int viewCount;
+    private long viewCount;
 
     public String getShowName() {
         return showName;
@@ -15,7 +15,7 @@ public class NetflixShow {
         this.showName = showName;
     }// sey show
 
-    public int getViewCount() {
+    public long getViewCount() {
         return viewCount;
     }// get count
 
@@ -30,7 +30,7 @@ public class NetflixShow {
     }
     public String forFile(){
         String result = "";
-        result += String.format(showName +";"+ viewCount);
+        result += String.format(showName +";"+ viewCount + "\n");
         return result;
     }
 
